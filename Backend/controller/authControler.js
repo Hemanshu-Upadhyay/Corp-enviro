@@ -89,8 +89,8 @@ router.get('/Allemployees5', (req, res) => {
     })
 })
 
-// Shiva Look here 
-// Pass user id in param and yopu will get that Employee
+ 
+// Pass user id in param and you will get that Employee
 router.get('/Leavebyemployee', (req, res) => {
     empleave.find({User_id : req.query.User_id}, (err, data) => {
         if (!data) return res.send(`No user was found with Division of ${req.query.User_id}` )
